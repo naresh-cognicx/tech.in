@@ -1,0 +1,324 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
+/* Add this CSS to your existing styles */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: center; /* Align content vertically */
+}
+
+.text {
+    flex: 1; /* Take remaining space */
+    padding-right: 20px; /* Add spacing between text and image */
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text p {
+    margin-bottom: 15px;
+}
+
+.text ul {
+    margin-bottom: 20px;
+}
+
+.text ul li {
+    margin-bottom: 10px;
+}
+
+.image {
+    flex: 1; /* Take remaining space */
+}
+    
+
+.home-image {
+    width: 100%; /* Make image responsive */
+    display: block; /* Remove extra space under image */
+}
+
+
+.additional-content {
+    padding: 10px; /* Padding */
+    background-color: #555; /* Background color */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+/* Add this CSS to your existing styles */
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Align content horizontally */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+}
+
+.text {
+    width: 50%; /* Adjust the width as needed */
+}
+
+.image {
+    width: 50%; /* Adjust the width as needed */
+    text-align: center; /* Align image to the center */
+}
+
+.home-image {
+    max-width: 100%; /* Ensures the image fits its  */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Adds a border radius to the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+}
+
+
+header {
+    background-color: #fff; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing */
+}
+/* Align the logo and navigation links */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    text-align: left; /* Align the logo to the left */
+}
+
+.logo img {
+    width: 150px; /* Set the width of the logo image */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the logo vertically */
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #1a0606;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #ffd700; /* Change text color on hover */
+    background-color: #555; /* Change background color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+}
+
+/* Mobile responsive navigation menu */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-links {
+        margin-top: 20px; /* Add spacing between logo and links */
+    }
+}
+
+
+
+section {
+    padding: 50px 0;
+    background-color: #fff; /* Section background color */
+    border-bottom: 1px solid #ccc; /* Separator line */
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+#contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.contact-content, .contact-form {
+    width: 50%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content h2, .contact-form h3 {
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    margin-bottom: 30px;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-content ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Add hover effects to social icons */
+.social-icons a:hover img {
+    opacity: 0.8;
+}
+/* Add this CSS to your existing styles */
+#about .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        text-align: center;
+    
+    padding: 20px; /* Add padding to the container */
+}
+
+#about h2 {
+    font-size: 2rem; /* Increase the font size of the heading */
+    color: #333; /* Change the color of the heading */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+#about p {
+    color: #666; /* Change the color of paragraphs */
+    line-height: 1.8; /* Adjust the line height */
+}
+
+
+#about .btn {
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    padding: 15px 30px; /* Adjust button padding */
+    border-radius: 10px; /* Add border radius */
+    font-size: 1.1rem; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+#about .btn:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}
+.offerings-image {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
